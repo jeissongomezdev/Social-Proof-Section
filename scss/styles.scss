@@ -1,3 +1,74 @@
-@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
 
 @import "imports/_variables", "imports/_reset", "imports/_mixin";
+
+.container {
+  @include flex;
+}
+
+.card {
+  padding: 5%;
+  margin: 5rem 0;
+  &__main {
+    margin-top: 5rem;
+    &--header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 3rem;
+    }
+  }
+  &__main-article {
+    background-color: $very-dark-magenta;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    padding: 3.5rem 3.4rem;
+  }
+  &__main-img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 2rem;
+  }
+  &__main-subtitle {
+    color: $soft-pink;
+    font-size: 12px;
+  }
+  &__main-text {
+    color: $light-grayish-magenta;
+    font-size: 13px;
+    line-height: 20px;
+  }
+  &__main-title {
+    color: $white;
+    font-size: 12px;
+    margin-bottom: 0.3125rem;
+  }
+}
+.card-rated {
+  background-color: $light-grayish-magenta;
+  margin: 1.5rem 0;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 10px;
+
+  img {
+    margin-bottom: 0.9375rem;
+    padding: 0 0.5rem;
+  }
+}
+.card-rated-title {
+  color: $very-dark-magenta;
+  font-size: 15px;
+}
+.card-text {
+  color: $dark-grayish-magenta;
+  padding: 2.5rem 0;
+  font-size: 15px;
+  text-align: center;
+  line-height: 1.6;
+}
+.card-title {
+  color: $very-dark-magenta;
+  text-align: center;
+  font-size: 3.8rem;
+  line-height: 1;
+}
