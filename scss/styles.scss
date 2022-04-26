@@ -72,3 +72,161 @@
   font-size: 3.8rem;
   line-height: 1;
 }
+
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: auto;
+    height: 100vh;
+  }
+
+  .showcase {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-title {
+    text-align: left;
+    max-width: 420px;
+    font-size: 5rem;
+  }
+
+  .card-text {
+    text-align: left;
+    max-width: 80%;
+  }
+
+  .stars {
+    div:nth-child(2) {
+      transform: translateX(5%);
+    }
+    div:nth-child(3) {
+      transform: translateX(10%);
+    }
+  }
+
+  .card-rated {
+    display: flex;
+    width: 85%;
+  }
+
+  .card-rated-title {
+    margin-left: 20px;
+  }
+
+  .card__main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    article:nth-child(2) {
+      transform: translateY(10%);
+    }
+    article:nth-child(3) {
+      transform: translateY(20%);
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .card-title {
+    font-size: 9rem;
+    max-width: 70%;
+  }
+
+  .card-text {
+    font-size: 2.5rem;
+    max-width: 70%;
+  }
+
+  .stars {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 4rem 0;
+  }
+
+  .card-rated {
+    width: 75%;
+    img {
+      padding: 1rem 1rem;
+    }
+  }
+
+  .card-rated-title {
+    font-size: 2.5rem;
+    margin-left: 40px;
+    @include flex;
+  }
+
+  .card {
+    padding: 8%;
+
+    &__main {
+      margin-top: 8rem;
+      gap: 5rem;
+    }
+
+    &__main-img {
+      width: 10%;
+    }
+
+    &__main-title {
+      font-size: 2.5rem;
+    }
+
+    &__main-subtitle {
+      font-size: 2.5rem;
+    }
+
+    &__main-text {
+      font-size: 2.5rem;
+      line-height: 4rem;
+    }
+
+    &__main-article {
+      padding: 6rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .card-title {
+    font-size: 7rem;
+  }
+
+  .card-text {
+    font-size: 1.5rem;
+  }
+
+  .card-rated-title {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 8%;
+
+    &__main {
+      margin-top: 0rem;
+      gap: 3rem;
+    }
+
+    &__main-img {
+      width: 11%;
+    }
+
+    &__main-title {
+      font-size: 1.5rem;
+    }
+
+    &__main-subtitle {
+      font-size: 1.5rem;
+    }
+
+    &__main-text {
+      font-size: 1.5rem;
+      line-height: 2.2rem;
+    }
+
+    &__main-article {
+      padding: 4rem;
+    }
+  }
+}
